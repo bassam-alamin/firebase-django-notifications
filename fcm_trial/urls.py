@@ -9,7 +9,7 @@ router.register('devices', FCMDeviceAuthorizedViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("firebase-messaging",
+    path("firebase-messaging-sw",
          TemplateView.as_view(
              template_name="firebase-messaging-sw.js",
              content_type="application/javascript",
